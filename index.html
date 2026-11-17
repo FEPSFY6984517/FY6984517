@@ -163,7 +163,7 @@
     // Get the text content from the specified section
     const text = document.getElementById(sectionId).textContent;
     // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
+    const wordArray = text.trim() === "" ? [] : text.trim().split(/\s+/);
     // Count the words
     const wordCount = wordArray.length;
     // Return the word count for summing purposes
