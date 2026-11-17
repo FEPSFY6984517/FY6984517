@@ -182,3 +182,120 @@
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
+/* =================================
+   MODERN DARK MODE THEME
+================================= */
+
+:root {
+    --bg-main: #0b1020;
+    --bg-card: #151d31;
+    --bg-input: #10182a;
+    --accent: #8b5cf6;
+    --accent-hover: #7c3aed;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border: #29344b;
+}
+
+/* Main website background */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+/* Paragraphs */
+p {
+    color: var(--text-muted);
+}
+
+/* Cards and sections */
+section,
+.card,
+.container-card {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+/* Text areas and input fields */
+textarea,
+input,
+select {
+    background-color: var(--bg-input);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* Placeholder text */
+textarea::placeholder,
+input::placeholder {
+    color: #64748b;
+}
+
+/* Focus effect */
+textarea:focus,
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+/* Buttons */
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 11px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* Word count display */
+#totalWordCount {
+    color: #a78bfa;
+    font-weight: bold;
+    font-size: 18px;
+    background: var(--bg-card);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+/* Links */
+a {
+    color: #a78bfa;
+}
+
+a:hover {
+    color: #c4b5fd;
+}
+
+/* Horizontal lines */
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+/* Smooth transitions */
+* {
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.2s;
+}
