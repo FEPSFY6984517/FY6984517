@@ -89,7 +89,7 @@
 <h3 id="Introduction">Introduction</h3>
 
 <p class="ex1">
-<pre>
+<pre id="IntroText>
   Running shoes hold a historic reputation in its constant development ability and performance. Over successive decades with advancements 
   in technology and material design we have seen running shoes originate from traditional leather sole to 3d printed, carbon plate models. 
   Through the growth in standards of competitive running, the manufacturing market for running shoes has had to closely adapt to stay ahead 
@@ -104,8 +104,8 @@
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
 
 <p class="ex1">
-<pre>
-  Analysis and discussion
+<pre id="AnalysisText">
+  This my section for Analysis and discussion
 </pre>
 </p>
 
@@ -188,8 +188,8 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis");
+    const IntroductionCount = displayWordCount("IntroText");
+    const AnalysisCount = displayWordCount("AnalysisText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
